@@ -1,0 +1,317 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Center the content in a container */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style for the content section */
+.content {
+    background-image: url('images/backgroundHome.png'); /* Path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-color: rgb(253, 226, 73);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add this CSS rule to set the maximum width for the content logo */
+.content img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Adjust the font size of headings and other text inside the .content div */
+.content {
+    font-size: 18px; /* Set the base font size for .content */
+}
+
+.content h1 {
+    font-size: 22px; /* Set the font size for <h1> inside .content */
+}
+
+.content h2 {
+    font-size: 22px; /* Set the font size for <h2> inside .content */
+}
+
+#main-buttons-container {
+    font-size: 16px; /* Set the font size for buttons inside #main-buttons-container */
+}
+
+/* Optional: You can adjust font sizes for larger screens using media queries */
+@media (min-width: 768px) {
+    .content {
+        font-size: 20px; /* Increase base font size for larger screens */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Increase font size for <h1> on larger screens */
+    }
+
+    .content h2 {
+        font-size: 28px; /* Increase font size for <h2> on larger screens */
+    }
+
+    #main-buttons-container {
+        font-size: 18px; /* Increase font size for buttons on larger screens */
+    }
+}
+
+
+
+/* display image format */
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    /*overflow: hidden; /* Hide overflow for zoom effect */
+}
+
+#displayedImage {
+    max-width: 100%; /* Make the image responsive to screen size */
+    height: auto; /* Maintain aspect ratio */
+    /*transition: transform 0.3s ease; /* Add transition effect for smooth zooming */
+}
+
+
+
+
+
+/* Style for the logo section */
+.logo {
+    text-align: center;
+    padding: 20px 0; /* Add padding to create space between logo and content */
+    position: relative; /* Set position to relative */
+    z-index: 2; /* Set a higher z-index to keep the logo above other elements */
+}
+
+.logo img {
+    width: 300px; /* Set the width of your logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 768px) {
+    .logo {
+        padding: 30px 0; /* Adjust padding for larger screens */
+    }
+
+    .logo img {
+        width: 200px; /* Adjust logo size for larger screens */
+    }
+}
+
+
+
+* Styles for the main buttons container */
+#main-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add margin between content and buttons */
+}
+
+
+/* Button style for index.html */
+.index-button {
+    /*
+    margin: 10px; 
+    padding: 10px 20px; 
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    */
+
+
+
+    margin: 15px 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Set the padding to create a square button */
+    background-color: #178866;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Set maximum width for the button */
+    height: 100px; /* Set the same height as the width to create a square button */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove the underline style for anchor tags */
+    text-align: center;  /*Center the text inside the button */
+    /*word-wrap: break-word;  Allow words to be broken and wrap to the next line */
+    line-height: 3; /* Adjust line height to reduce the gap between lines */
+    overflow: hidden; /* Hide overflowing content */
+    vertical-align: middle; /* Vertically align the button */
+    white-space: pre-line; /* Allow text to wrap and break into multiple lines */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.index-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+/* Optional: Add media queries for responsive design */
+
+@media (min-width: 768px) {
+    .index-button {
+        /*max-width: 100%; /* Adjust maximum width for smaller screens */
+        width: 130px; /* Adjust the width for larger screens if needed */
+        height: 130px; /* Set the same height as the width for a square button */
+    }
+}
+  
+
+
+
+
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  
+
+/* Smiley face */
+.popup .smiley-face {
+    width: 40px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup .smiley-face .eye {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.popup .smiley-face .mouth {
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.button1 {
+    background-color: #3498db;
+    color: white;
+}
+
+.button2 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.button3 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.button4 {
+    background-color: #f39c12;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Add a slight zoom effect on hover 
+}
+*/
+
+

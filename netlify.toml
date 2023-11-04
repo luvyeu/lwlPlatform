@@ -1,0 +1,81 @@
+[build]
+  base = "."
+  publish = "_site/"  # Replace this with your Jekyll output directory
+  functions = "netlify/functions/"  # Replace this with your functions directory if applicable
+  command = "bundle exec jekyll build"  # Use Bundler to execute Jekyll build
+
+
+[[headers]]
+  # Set Cache-Control headers for HTML files to not cache (no-store)
+  for = "*.html"
+    [headers.values]
+    Cache-Control = "no-store, must-revalidate"
+
+[[headers]]
+  # Set Cache-Control headers for CSS files to cache for 7 days
+  for = "*.css"
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  # Set Cache-Control headers for JavaScript files to cache for 7 days
+  for = "*.js"
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  # Set Cache-Control headers for font files to cache for 7 days
+  for = "*.woff"
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  # Set Cache-Control headers for font files to cache for 7 days
+  for = "*.woff2"
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  # Set Cache-Control headers for image files to cache for 30 days
+  for = "*.jpg"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for image files to cache for 30 days
+  for = "*.jpeg"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for image files to cache for 30 days
+  for = "*.png"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for image files to cache for 30 days
+  for = "*.gif"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for image files to cache for 30 days
+  for = "*.svg"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for favicon files to cache for 30 days
+  for = "*.ico"
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for API routes to not cache (no-store)
+  for = "/api/*"
+    [headers.values]
+    Cache-Control = "no-store, must-revalidate"
+
+
+# Additional headers configuration can be added as needed
