@@ -31,8 +31,8 @@ function showSlides() {
     // Display the current slide
     slides[slideIndex - 1].style.display = "block";
 
-    // Change slide every 2 seconds (2000 milliseconds)
-    setTimeout(showSlides, 2000);
+    // Change slide every 3 seconds (2000 milliseconds)
+    setTimeout(showSlides, 8000);
 }
 
 

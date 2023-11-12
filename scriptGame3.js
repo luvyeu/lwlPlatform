@@ -91,3 +91,13 @@ const initGame = () => {
 updateFoodPosition();
 setIntervalId = setInterval(initGame, 100);
 document.addEventListener("keyup", changeDirection);
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Home button click event
+    var homeButton = document.getElementById("homeButton");
+    homeButton.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+});

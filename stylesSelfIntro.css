@@ -1,3 +1,6 @@
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -13,3 +16,24 @@ body {
     height: 80vh;
     overflow: auto;
 }
+
+
+
+#homeButton {
+    margin-top: 20px; /* Add some space between the form button and other elements */
+    padding: 15px 30px; /* Padding for the form button */
+    background-color: #d3bb35; /* Green background color */
+    color: #116479; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size for the form button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #d3bb35; /* Darker green on hover */
+    }
+
+}
+
