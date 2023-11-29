@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var buttonsData = [
-        { label: "Know Yourself \n个人特征", link: "images/了解自己.png" },
-        { label: "Mentality Adjustment \n潜能和行业", link: "images/心态调整.png" },
-        { label: "Own Potential \n自己的潜能", link: "images/自己的潜能.png" },
-        { label: "Learning \n魅力创业-", link: "images/学习.png" },
-        { label: "Sharpen \n魅力灵魂-陪伴篇", link: "images/磨练.png" },
-        { label: "Improvement \n魅力灵魂", link: "images/自我提升.png" }
+        { label: "领取报告 \nRedeem report", link: "reports/个人资料.png" },
+        { label: "个性特质 \nPersonality traits", link: "reports/大爱型.png" },
+        { label: "购买人格解码 \nBuy Personal Decoding", link: "reports/报告-1.png" },
+        { label: "购买潜能报告 \nBuying Potential Report", link: "reports/报告-2.png" }
     ];
 
     var buttonsContainer = document.getElementById("buttons-container");
@@ -17,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             // Store the clicked image link in localStorage for retrieval in page2.html
             localStorage.setItem("imageLink", buttonInfo.link);
-            window.location.href = "page1-1.html";
+            window.location.href = "report-1.html";
         });
         buttonsContainer.appendChild(button);
     });
@@ -93,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to navigate back to page1.html
     function goBack() {
-        window.location.href = "page1.html";
+        window.location.href = "report.html";
     }
 
     // Attach event listeners to buttons
@@ -157,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Back button click event
     var backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function () {
-        window.location.href = "page1.html";
+        window.location.href = "report.html";
     });
 });
 

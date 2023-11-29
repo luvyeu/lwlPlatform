@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Back button click event
     var backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function () {
-        window.location.href = "page1.html";
+        window.location.href = "charm.html";
     });
 });
 

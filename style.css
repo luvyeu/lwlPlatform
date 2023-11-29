@@ -162,11 +162,11 @@ body {
     text-decoration: none; /* Remove the underline style for anchor tags */
     text-align: center;  /*Center the text inside the button */
     /*word-wrap: break-word;  Allow words to be broken and wrap to the next line */
-    line-height: 3; /* Adjust line height to reduce the gap between lines */
+    line-height: 1.5; /* Adjust line height to reduce the gap between lines */
     overflow: hidden; /* Hide overflowing content */
     vertical-align: middle; /* Vertically align the button */
     white-space: pre-line; /* Allow text to wrap and break into multiple lines */
-    font-size: 14px;
+    font-size: 13px;
     transition: background-color 0.3s ease;
 }
 
@@ -180,8 +180,8 @@ body {
 @media (min-width: 768px) {
     .index-button {
         /*max-width: 100%; /* Adjust maximum width for smaller screens */
-        width: 130px; /* Adjust the width for larger screens if needed */
-        height: 130px; /* Set the same height as the width for a square button */
+        width: 100px; /* Adjust the width for larger screens if needed */
+        height: 100px; /* Set the same height as the width for a square button */
     }
 }
   
