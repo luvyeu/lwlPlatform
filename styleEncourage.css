@@ -42,6 +42,11 @@ img {
     transition: background-color 0.3s ease;
 }
 
+.button:hover {
+    background-color: #5b21c7; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
 /* Optional: Add media queries for responsive design */
 
 @media (min-width: 768px) {
@@ -142,9 +147,14 @@ img {
 
     /* Add hover effect */
     &:hover {
-        background-color: #d3bb35; /* Darker green on hover */
+        background-color: #5b21c7; /* Darker green on hover */
     }
 
+}
+
+.button:hover {
+    background-color: #5b21c7; /* Darker blue on hover */
+    transform: scale(1.1);
 }
 
 /* Additional styles for larger screens if needed */

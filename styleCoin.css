@@ -51,6 +51,11 @@ h3 {
     transition: background-color 0.3s ease;
 }
 
+.button:hover {
+    background-color: #5b21c7; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
 /* Optional: Add media queries for responsive design */
 
 @media (min-width: 768px) {
@@ -151,7 +156,7 @@ h3 {
 
     /* Add hover effect */
     &:hover {
-        background-color: #d3bb35; /* Darker green on hover */
+        background-color: #5b21c7; /* Darker green on hover */
     }
 
 }
@@ -165,5 +170,32 @@ h3 {
 }
 
 
+
+
+#coinButton {
+    margin-top: 10px; /* Add some space between the form button and other elements */
+    padding: 10px 15px; /* Padding for the form button */
+    background-color: rgb(211, 129, 53); /* Green background color */
+    color: #116479; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Round the corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 12px; /* Font size for the form button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #5b21c7; /* Darker green on hover */
+    }
+
+}
+
+/* Additional styles for larger screens if needed */
+@media (min-width: 768px) {
+    #homeButton {
+        font-size: 18px; /* Increase font size for larger screens */
+        padding: 20px 40px; /* Adjust padding for larger screens */
+    }
+}
 
 

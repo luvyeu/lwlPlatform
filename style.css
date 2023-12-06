@@ -171,7 +171,8 @@ body {
 }
 
 .index-button:hover {
-    background-color: #2980b9; /* Darker blue on hover */
+    background-color: #5b21c7; /* Darker blue on hover */
+    transform: scale(1.1);
 }
 
 

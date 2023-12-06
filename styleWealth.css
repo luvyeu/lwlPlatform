@@ -25,6 +25,12 @@
     transition: background-color 0.3s ease;
 }
 
+
+.button:hover {
+    background-color: #5b21c7; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
 /* Optional: Add media queries for responsive design */
 
 @media (min-width: 768px) {
@@ -126,7 +132,7 @@
 
     /* Add hover effect */
     &:hover {
-        background-color: #d3bb35; /* Darker green on hover */
+        background-color: #5b21c7; /* Darker green on hover */
     }
 
     /* Additional styles for larger screens if needed */
@@ -149,7 +155,7 @@
 
     /* Add hover effect */
     &:hover {
-        background-color: #2980b9; /* Darker blue on hover */
+        background-color: #5b21c7; /* Darker blue on hover */
     }
 }
 
@@ -239,7 +245,7 @@
 }
 
 #homeButton:hover {
-    background-color: #d3bb35;
+    background-color: #5b21c7;
 }
 
 .button {

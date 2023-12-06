@@ -32,7 +32,7 @@ body {
 
     /* Add hover effect */
     &:hover {
-        background-color: #d3bb35; /* Darker green on hover */
+        background-color: #5b21c7; /* Darker green on hover */
     }
 
 }
